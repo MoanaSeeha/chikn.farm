@@ -1,28 +1,15 @@
-import React from "react";
-import Slider from "../../components/slider";
-import AboutUs from "./Aboutus";
-import Collectibles from "./Collectibles";
-import Combine from "./Combine";
-import Description from "./Description";
-import GiveWay from "./GiveWay";
-import Mint from "./Mint";
-import Presale from "./Presale";
-import Question from "./Question";
+import React from 'react';
+
+import Landing from './Landing';
+import Info from './Info'
 
 const Home = () => {
   return (
-    <>
-      <Collectibles />
-      <Mint />
-      <Slider />
-      <Description />
-      <Question />
-      <Combine />
-      <GiveWay />
-      <Presale />
-      <AboutUs />
-    </>
-  );
+    <div className='absolute h-full w-[100vw] md:-top-1/4'>
+      <Landing/>
+      <Info/> 
+    </div>
+  )
 };
 
 export default Home;
