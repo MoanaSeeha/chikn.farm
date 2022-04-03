@@ -9,3 +9,7 @@
 .cr-slauteblue-xs {
   color: #3b3d76!important;
 }
+
+.y-reverse {
+  transform: rotateY(3.142rad) translateY(-200px);
+}

@@ -4,7 +4,7 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 const Landing = () => {
   return (
     <>
-      <div className="relative w-[100vw] h-[40vw]">
+      <div className="relative w-[100vw] h-[40vw] -mt-24 2xl:-mt-40">
 
       <ParallaxBanner
       layers={[
