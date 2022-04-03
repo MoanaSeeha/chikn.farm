@@ -9,7 +9,7 @@ import JoinDiscord from './JoinDiscord';
 const Info = () => {
   return (
     <>
-      <div className="bg-[#191a32] py-20 md:py-40 px-20">
+      <div className="cr-slauteblue-sm py-20 md:py-40 px-20">
         <div className="relative flex flex-col justify-center space-y-4 mb-24">
           <div className="hidden xl:block absolute w-full h-full left-[10vw]">
             <img src={process.env.PUBLIC_URL+'/img/Web_Egg_02.png'} alt="" className="absolute top-1/2 -translate-y-1/2 h-[300px] -rotate-12 object-contain"/>

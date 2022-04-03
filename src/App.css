@@ -1,13 +1,30 @@
-.bg-slauteblue-sm {
+* {
+  font-family: 'Poppins';
+}
+
+
+.cr-slauteblue-sm {
+  background-color: #191a32!important;
+}
+
+.cr-slauteblue-md {
   background-color: #2a2c54!important;
 }
 
-.cr-slauteblue-sm {
-  color: #2a2c54!important;
+.cr-slauteblue-lg {
+  background-color: #3b3d76!important;
 }
 
-.cr-slauteblue-xs {
-  color: #3b3d76!important;
+.chikn-red {
+  color: #df3f3d;
+}
+
+.selectbox {
+  box-shadow: 0 0 0 0.25rem rgb(223 63 61 / 50%)
+}
+
+.selectbox::after {
+  color:#df3f3d;
 }
 
 .y-reverse {
