@@ -27,13 +27,13 @@ const MobileNavbar = () => {
       {
         Routes.map((route, index) => {
           if(route.sub_route) {
-            return <div key={index} className="relative py-2 px-4 group cursor-pointer">
+            return <div key={index} className="relative py-2 px-4 group cursor-pointer flex items-center">
             {route.title} 
             { <SubRouteCard routes={route.sub_route}/>}
             </div>
           } else {
             return (
-              <Link key={index} to={route.path===undefined?'/':route.path} className="py-2 px-4">
+              <Link key={index} to={route.path===undefined?'/':route.path} className="py-2 px-4 flex items-center">
                 {route.title}
               </Link>
               )

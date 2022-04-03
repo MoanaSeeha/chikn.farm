@@ -69,10 +69,13 @@ const Total = () => {
             }
           </div>
         </div>
-        <div>
-          sort:{<SelectBox items={seletBoxData} onChange={() => {}}></SelectBox>}
+        <div className='py-5 px-4'>
+          <div className=' text-lg inline-block mr-1'> SORT:</div>
+          <SelectBox items={seletBoxData} onChange={() => {}}></SelectBox>
         </div>
-
+        <div className='my-10 mx-auto'>
+          No chikns available.
+        </div>
       </Board>
     </div>
   )

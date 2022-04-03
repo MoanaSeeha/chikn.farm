@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useRef, useEffect } from "react";
 
 import Icons from "../Icons";
 
@@ -16,18 +16,29 @@ type Props = {
 const SelectBox: FC<Props> = (props: Props) => {
 
   const { items } = props;
+
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
   const [selectedItem, selectItem] = useState(0);
-  const [openState, open] = useState(true);
-  // const onChange = (i: number) => {
-  //   setActive(i)
-  //   props.onChange(i);
-  // }
+  const [openState, open] = useState(false);
+  function useOutsideAlerter(ref:any) {
+    useEffect(() => {
+      function handleClickOutside(event:any) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          open(false)
+        }
+      }
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
 
   return (
-    
-      <div className="mb-3 xl:w-48 relative cursor-pointer">
+      <div className="inline-block mb-3 xl:w-48 relative cursor-pointer z-50" ref={wrapperRef}>
         <div 
-          className={`${openState?'selectbox ':''}block w-full px-3 py-1.5 text-base font-normal bg-[#0000] bg-clip-padding bg-no-repeat border border-solid border-white rounded transition ease-in-out m-0 hover:bg-[#df3f3d]`}
+          className={`${openState?'selectbox ':''}block w-full px-3 py-1.5 text-sm font-normal bg-[#0000] bg-clip-padding bg-no-repeat border border-solid border-white rounded transition ease-in-out m-0 hover:bg-[#df3f3d]`}
           onClick={() => open(!openState)}
         >
           {

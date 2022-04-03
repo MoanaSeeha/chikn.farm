@@ -16,7 +16,7 @@ const Tab:FC<Props> = (props: Props) => {
   }
 
   return (
-    <ul className="flex flex-col md:flex-row flex-wrap pl-0">
+    <ul className="flex flex-row flex-wrap pl-0">
     {
       titles?.map((t, i) => {
         return(
