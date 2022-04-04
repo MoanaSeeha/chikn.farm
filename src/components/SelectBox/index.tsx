@@ -15,7 +15,7 @@ type Props = {
 
 const SelectBox: FC<Props> = (props: Props) => {
 
-  const { items } = props;
+  const { items, className } = props;
 
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
@@ -36,9 +36,9 @@ const SelectBox: FC<Props> = (props: Props) => {
   }
 
   return (
-      <div className="inline-block mb-3 xl:w-48 min-w-[200px] relative cursor-pointer z-50" ref={wrapperRef}>
+      <div className={`inline-block mb-3 min-w-[200px] relative cursor-pointer ${className}`} ref={wrapperRef}>
         <div 
-          className={`${openState?'selectbox ':''}block w-full px-3 py-1.5 text-sm font-normal bg-[#0000] bg-clip-padding bg-no-repeat border border-solid border-white rounded transition ease-in-out m-0 hover:bg-[#df3f3d]`}
+          className={`${openState?'selectbox ':''}block w-full px-3 py-1.5 text-sm font-normal bg-[#0000] bg-clip-padding bg-no-repeat border border-solid border-white rounded-lg transition ease-in-out m-0 hover:bg-[#df3f3d]`}
           onClick={() => open(!openState)}
         >
           {
@@ -54,7 +54,7 @@ const SelectBox: FC<Props> = (props: Props) => {
         </div>
         
         {openState?
-          <div className="absolute right-0 mt-1 bg-white rounded-md py-3">{
+          <div className=" z-50 absolute right-0 mt-1 bg-white rounded-md py-3">{
             items?.map((t,i) => {
               return (
               <div 
@@ -68,8 +68,8 @@ const SelectBox: FC<Props> = (props: Props) => {
                 </div>
                 <div 
                   className={`
-                  ${i === selectedItem?'border-[#df3f3d] border-4 ':''}
-                  rounded-full h-4 w-4 border bg-white focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2
+                  ${i === selectedItem?'border-[#df3f3d] ':' border-gray-300 '}
+                  rounded-full h-4 w-4 border-4  bg-white focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2
                   `}/>
               </div>
             )})

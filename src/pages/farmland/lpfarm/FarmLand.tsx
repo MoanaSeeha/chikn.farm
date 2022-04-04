@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import { Board } from '../../../components/Board';
 import SelectBox, {ISelectItem} from '../../../components/SelectBox';
+import Input from '../../../components/Input';
+import Icons from '../../../components/Icons';
 
 const FarmLand = () => {
 
@@ -32,11 +34,37 @@ const FarmLand = () => {
               <div className='chikn-red text-sm'>TOTAL EGG HELD</div>
             </div>
           </div>
-          <div>
-            <SelectBox items={seletBoxData} onChange={() => {}} />
+          <div className='flex sm:flex-row flex-col justify-between mt-5'>
+            <SelectBox items={seletBoxData} className='sm:w-1/3 w-full' onChange={() => {}} />
+            <div className='flex flex-row sm:w-1/3 w-full'>
+              <Input onChange={() => {}} className='w-full mr-2'/>
+              <div className='h-8 w-8 inline-block py-1 px-1 rounded-lg transition-all text-sm text-[#f2f2f2] bg-[#df3f3d]'>
+                <svg xmlns="http://www.w3.org/2000/svg" className=" text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col justify-center items-center my-8'>
+            <div className=' text-gray-600 mb-12'>
+            No land found
+            </div>
+            <div className='inline-block w-1 h-1 p-1 rounded-full bg-[#df3f3d]'></div>
+            <div className=' text-gray-600 mt-12 text-3xl'>
+            No land found
+            </div>
+          </div>
+          <div className='absolute top-1/2 cursor-pointer -right-2 h-8 w-8 inline-block py-1 px-1 rounded-full text-lg text-[#2a2c54] bg-[#f7f7f798] hover:bg-[#f7f7f7e5]'>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+          <div className='absolute top-1/2 cursor-pointer -left-2 h-8 w-8 inline-block py-1 px-1 rounded-full text-lg text-[#2a2c54] bg-[#f7f7f798] hover:bg-[#f7f7f7e5]'>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
           </div>
         </div>
-       
       </Board>  
   )
 }
