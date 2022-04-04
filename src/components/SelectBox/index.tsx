@@ -36,7 +36,7 @@ const SelectBox: FC<Props> = (props: Props) => {
   }
 
   return (
-      <div className="inline-block mb-3 xl:w-48 relative cursor-pointer z-50" ref={wrapperRef}>
+      <div className="inline-block mb-3 xl:w-48 min-w-[200px] relative cursor-pointer z-50" ref={wrapperRef}>
         <div 
           className={`${openState?'selectbox ':''}block w-full px-3 py-1.5 text-sm font-normal bg-[#0000] bg-clip-padding bg-no-repeat border border-solid border-white rounded transition ease-in-out m-0 hover:bg-[#df3f3d]`}
           onClick={() => open(!openState)}

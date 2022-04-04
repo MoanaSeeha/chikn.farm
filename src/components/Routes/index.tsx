@@ -26,7 +26,7 @@ const Routes:IRoute[] = [
     title: 'FarmLand',
     sub_route: [
       {
-        path: 'roost',
+        path: 'lpfarm',
         title: 'LP Farm'
       },
       {
