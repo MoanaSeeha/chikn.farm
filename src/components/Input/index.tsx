@@ -19,7 +19,7 @@ const Input: FC<Props> = (props: Props) => {
   const[focus,onFocus] = useState(false);
 
   return (
-      <div className={`inline-block mb-3 xl:w-48 min-w-[200px] relative cursor-pointer z-50 ${className}`}>
+      <div className={`inline-block mb-3 xl:w-48 min-w-[200px] relative cursor-pointer ${className}`}>
         <input 
           type={type}
           className={`${focus?'selectbox ':''}block w-full px-3 py-1.5 text-sm font-normal bg-[#222343] bg-clip-padding bg-no-repeat border border-solid border-[#3b3d76] rounded-lg transition ease-in-out m-0 ${inputClass}`}
