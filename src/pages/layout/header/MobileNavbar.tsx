@@ -11,7 +11,7 @@ const MobileNavbar = () => {
   return (<>
   <div className="md:hidden lg:hidden text-[#f2f2f2] text-lg  bg-inherit w-full">
     <div className="flex flex-row space-x-2 relative items-center justify-evenly w-full" >
-        <img src={process.env.PUBLIC_URL + '/img/logo.png'} className="w-24 py-3" alt="Logo" />
+
         <ToolButton buttonProps={[{icon: 'menu'}]} onClick = {()=>setOpen(!isOpen)}/>
     </div>
     <Transition

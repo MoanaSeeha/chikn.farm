@@ -7,8 +7,7 @@ import Routes from '../../../components/Routes'
 
 const NormalNavbar = () => {
   return (
-  <div className="hidden flex-row md:flex text-[#f2f2f2] text-lg space-x-2">
-    <img src={process.env.PUBLIC_URL + '/img/logo.png'} className="w-24 py-3 -mt-3" alt="Logo" />
+  <div className="hidden flex-row md:flex text-[#f2f2f2] text-lg space-x-2 relative">
     {
       Routes.map((route, index) => {
         if(route.sub_route) {
