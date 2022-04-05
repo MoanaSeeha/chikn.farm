@@ -11,7 +11,7 @@ type Props = {
 }
 
 export const Button:FunctionComponent<Props> = (props: Props) => (<div>
-  <div className=' inline-block py-2 px-5 bg-[#df3f3d] rounded-lg text-[#f2f2f2] transition-all hover:bg-[#E45C5A] cursor-pointer text-base'>
+  <div className=' inline-block py-2 px-5 bg-[#FAB801] rounded-lg text-[#f2f2f2] transition-all hover:bg-[#E45C5A] cursor-pointer text-base'>
     {props.title?props.title:<></>}
     {props.icon?<Icons type={props.icon} />:<></>}
     {props.tooltip?

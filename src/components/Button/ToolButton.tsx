@@ -26,7 +26,7 @@ export const ToolButton:FC<Props> = (props: Props) => (
         (props.buttonProps.length === 1?'rounded-xl': 
           (i !== 0)?
           (i === props.buttonProps.length-1? 'rounded-r-xl':''):
-            'rounded-l-xl') + ' p-2 h-10 border border-[#3b3d76] bg-[#222343] color-[#f2f2f2] transition-all hover:bg-[#2a2c54] cursor-pointer text-base'}>
+            'rounded-l-xl') + ' p-2 h-10 border border-[#3b3d76] bg-[#2a2c54] color-[#f2f2f2] transition-all hover:bg-[#2a2c54] cursor-pointer text-base'}>
           {btn.title?btn.title:<></>}
           {btn.icon?<Icons type={btn.icon} />:<></>}
           {btn.tooltip?

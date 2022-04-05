@@ -1,16 +1,15 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
-import Home from "../pages/home";
-import Roost from "../pages/chikn/roost";
-import LPFarm from '../pages/farmland/lpfarm';
+import Howl from "../pages/howl";
+import LpHunt from '../pages/lphunt';
 
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/roost" element={<Roost />} />
-      <Route path="/lpfarm" element={<LPFarm />} />
+      <Route path="/" element={<Navigate replace to="/lphunt" />} />
+      <Route path="/lphunt" element={<LpHunt />} />
+      <Route path="/howl" element={<Howl />} />
     </Routes>
   );
 };

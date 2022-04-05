@@ -16,7 +16,7 @@
 }
 
 .chikn-red {
-  color: #df3f3d;
+  color: #FAB801;
 }
 
 .selectbox {
@@ -28,7 +28,7 @@
 }
 
 .selectbox::after {
-  color:#df3f3d;
+  color:#FAB801;
 }
 
 .y-reverse {

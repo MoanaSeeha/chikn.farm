@@ -22,7 +22,7 @@ const Tab:FC<Props> = (props: Props) => {
         return(
           <li key={i} className={`
             block text-lg font-bold leading-tight capitalize cursor-pointer
-            ${i===activedTab?'border-b-2 border-solid border-[#df3f3d]':' '}
+            ${i===activedTab?'border-b-2 border-solid border-[#FAB801]':' '}
             px-6 py-3 transition-colors
             `} onClick={() => onChange(i)}>{t}
           </li>    

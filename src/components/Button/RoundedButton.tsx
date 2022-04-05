@@ -20,7 +20,7 @@ export const RoundedButton:FunctionComponent<Props> = (props: Props) => {
       className={`inline-block py-1 px-6 rounded-full transition-all text-base
         ${className?className:''}
         ${disabled?'':' cursor-pointer'}
-        ${!disabled?(onlyBorder?' border border-[#df3f3d] text-[#df3f3d] hover:text-black hover:bg-[#df3f3d]':'bg-[#df3f3d] hover:bg-[#E45C5A] text-[#f2f2f2]'):' bg-[#df3f3d] opacity-70'}`}>
+        ${!disabled?(onlyBorder?' border border-[#FAB801] text-[#FAB801] hover:text-black hover:bg-[#FAB801]':'bg-[#FAB801] hover:bg-[#E45C5A] text-[#f2f2f2]'):' bg-[#FAB801] opacity-70'}`}>
       {title?title:<></>}
       {icon?<Icons type={icon} />:<></>}
       {tooltip?
