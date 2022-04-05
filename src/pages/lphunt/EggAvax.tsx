@@ -29,7 +29,7 @@ const EggAvax = () => {
             </svg>}
           </div>
         </div>
-        <SlideDown className={'my-dropdown-slidedown'}>
+        <SlideDown className={'my-dropdown-slidedown'} >
           {toggleStatus ? 
             <div className='px-3 flex md:flex-row flex-col space-x-0 md:space-x-5 py-5'>
               <div className='flex flex-col md:basis-2/5 px-5 bg-[#681818] rounded-lg py-8'>
@@ -57,7 +57,7 @@ const EggAvax = () => {
                 <RoundedButton title='Activate'/>
               </div>
             </div>
-           : (<></>)}
+           : null}
         </SlideDown>
       </Board>  
   )

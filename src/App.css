@@ -31,6 +31,10 @@
   color:#FAB801;
 }
 
+.background-img {
+  background-image: url('../public/img/staking_background.jpeg');
+}
+
 .y-reverse {
   transform: rotateY(3.142rad) translateY(-200px);
 }

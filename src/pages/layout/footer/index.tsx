@@ -25,28 +25,28 @@ const Footer = () => {
               <div className="chikn-red">Site</div>
               <div>Home</div>
               <div>Mint</div>
-              <div>Chikn</div>
-              <div className="ml-2">Roost</div>
-              <div className="ml-2">Leaderboard</div>
-              <div>FarmLand</div>
-              <div className="ml-2">LP Farm</div>
-              <div className="ml-2">Tiles / Traits</div>
+              <div>Journey</div>
+              <div className="ml-3">Howl</div>
+              <div className="ml-3">Leaderboard</div>
+              <div>Quest</div>
+              <div className="ml-3">LP Hunt</div>
+              <div className="ml-3">Traits</div>
               <div>Wallet</div>
-              <div className="ml-2">Chikn</div>
-              <div className="ml-2">FarmLand</div>
+              <div className="ml-3">FarmLand</div>
+              <div>Market</div>
+              <div className="ml-3">WoA</div>
               </div>
             <div className="flex flex-col basis-1/2 text-lg">
               <div className="chikn-red">Other</div>
-              <div>Roadmap</div>
+              <div>Phases</div>
               <div>Status</div>
-              <div>Terms</div>
               <div>Docs</div>
               <div>API</div>
             </div>
           </div>
         </div>
         <div className="flex flex-row justify-between py-3 border-t border-[#3b3d76]">
-          <div>© 2022 chikn</div>
+          <div>© 2022 WoA</div>
           <a href="#" className="chikn-red flex space-x-2 underline"><div>Powered by</div><img src={`${process.env.PUBLIC_URL}/img/download.svg`} alt="" className='w-5 h-5'/></a>
         </div>
       </div>
